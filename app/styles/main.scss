@@ -269,6 +269,45 @@ hr {
         color: #00A8E5;
     }
 }
+
+.proj-name {
+    font-size: 18px;
+    font-family: 'Droid Serif', serif;
+    margin:10px 0px;
+    font-weight: bold;
+    color: #777777;
+
+}
+.proj-desc {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #555;
+
+}
+.img-wrap {
+    padding:4px;
+    border:1px solid #ddd;
+    img {
+        border:1px solid #eeeeee;
+    }
+}
+
+.skill-cont {
+    margin: 15px 0px;
+    span {
+        background-color: #eeeeee;
+        display: inline-block;
+        padding:4px 8px;
+        border:1px solid #ccc;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #666;
+        margin-right: 4px;
+        margin-bottom: 10px;
+    }
+}
 /* ABOUT BLOCK */
 .about-blk{
     background: #B8DEC6;
@@ -415,8 +454,14 @@ hr {
 
 .project-det {
     padding:40px 20px;
+    .uk-grid {
+        margin-left: 0px;
+        margin-bottom: 30px;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 30px;
+    }
 }
 .project-img{
-    border: 3px solid #ccc;
-    height: 319px;
+    /*border: 3px solid #ccc;*/
+    /*height: 319px;*/
 }
