@@ -420,3 +420,13 @@ hr {
     border: 3px solid #ccc;
     height: 319px;
 }
+
+@media (max-width: 480px) {
+    .social-btns a{
+        padding: 8px 15px;
+        font-size: 26px;
+        margin: 5px;
+        min-width: 71px;
+        margin-bottom: 10px;
+    }
+}
