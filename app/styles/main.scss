@@ -260,7 +260,7 @@ hr {
         font-size: 30px;
         color:#ccc;
         border:1px solid #ddd;
-        min-width: 40px;
+        min-width: 90px;
         display: inline-block;
         padding:24px 18px;
         margin:10px;
@@ -271,7 +271,7 @@ hr {
 }
 /* ABOUT BLOCK */
 .about-blk{
-    background: #ecdfbd;
+    background: #B8DEC6;
     padding:60px 0px;
     .blk-title {
         color: #333;
@@ -288,8 +288,23 @@ hr {
     }*/
 }
 .footer {
-    min-height: 300px;
-    background: #ecdfbd;
+    min-height: 60px;
+    padding: 20px;
+    background: #3B3A35;
+    color: #bbb;
+    .footer-links{
+        padding: 15px 0px;
+        a{
+            font-size: 20px;
+            margin: 10px;
+            color:#ddd;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .uk-icon-star{
+            font-size: 11px;
+        }
+    }
 }
 .about-desc {
     font-size: 18px;
@@ -322,7 +337,7 @@ hr {
 }
 
 
-.skill-blk{
+/*.skill-blk{
     margin-top: 40px;
     .skills{
         border-radius: 50%;
@@ -361,11 +376,10 @@ hr {
             transform: translate(-135px,0px);
         }
     }
-}
+}*/
 
 .contact-blk{
     padding:60px 0px;
-
     background: #3B3A35;
     min-height: 500px;
     text-align: center;
@@ -376,10 +390,14 @@ hr {
 }
 
 .downloads-blk {
-    background: #ecdfbd;
+    background: #B8DEC6;
     padding:60px 0px;
+    padding-bottom: 100px;
     .blk-title {
         color: #333;
+        p{
+            font-size: 16px;
+        }
     }
 }
 
@@ -397,4 +415,8 @@ hr {
 
 .project-det {
     padding:40px 20px;
+}
+.project-img{
+    border: 3px solid #ccc;
+    height: 319px;
 }
