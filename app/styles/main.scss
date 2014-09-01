@@ -180,6 +180,7 @@ body{
         font-size: 26px;
         border-radius: 5px;
         margin-right: 20px;
+        margin-bottom: 15px;
     }
 }
 
@@ -463,6 +464,16 @@ hr {
 }
 
 
+@media (max-width:900px){
+     .dwnld-btns .uk-button {
+        min-height: 25px;
+        padding: 15px 25px;
+        line-height: 20px;
+        font-size: 25px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+}
 @media (max-width: 480px) {
     .social-btns a{
         padding: 8px 15px;
@@ -470,6 +481,32 @@ hr {
         margin: 5px;
         min-width: 71px;
         margin-bottom: 10px;
+    }
+
+    .footer .footer-links a {
+        font-size: 15px;
+    }
+    .dwnld-btns .uk-button {
+        min-height: 25px;
+        padding: 10px 20px;
+        line-height: 20px;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .proj-name{
+        font-size: 15px;
+    }
+    .proj-desc{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .skill-count{
+        span{
+            font-size: 11px;
+            padding: 4px 6px;
+        }
     }
 
 }
