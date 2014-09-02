@@ -120,6 +120,7 @@ body{
     width: 100%;
     text-align: center;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 .uk-vertical-align-middle {
     width:100%;
@@ -509,4 +510,123 @@ hr {
         }
     }
 
+}
+
+.build-text{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.contact-text{
+    margin-top: 20px;
+    font-size: 20px;
+    color:#fff;
+}
+
+.image-thumbs{
+    img{
+        width: 120px;
+        height: 100px;
+        float: left;
+        border: 2px solid #ccc;
+        margin-right: 3px;
+    }
+}
+.bla{
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    transition: 300ms opacity linear;
+}
+
+#ife3:target, #ife2:target, #ife1:target { opacity: 1; }
+#ndcc:target, #ndcb:target, #ndca:target { opacity: 1; }
+#sab:target, #saa:target { opacity: 1; }
+#vcbb:target, #vcba:target { opacity: 1; }
+
+.img-gallery{
+    padding-top: 61.6%;
+    position: relative;
+}
+
+.other-pro-title{
+    margin-top: 30px;
+}
+
+.card-blk{
+    background-color:#d9edf7;
+    color: #333;
+    padding: 100px 0px;
+    .blk-title{
+        color: inherit;
+    }
+}
+
+
+/* Flip Card Animation */
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000;
+}
+    /* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+
+}
+
+/*.flip{
+    transform: rotateY(180deg);
+    transition: 0.6s;
+}*/
+
+.flip-container, .front, .back {
+    border-radius: 3px;
+    color: #fff;
+    width: 260px;
+    height: 360px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    background-color: #6E6D68;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.front{
+    text-align: center;
+    padding-top: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    h3{
+        font-weight: 200;
+    }
+}
+.back{
+    text-align: left;
+    font-size: 18px;
+    padding: 15px 15px;
+    line-height: 170%;
 }

@@ -34,6 +34,7 @@
 
                 <ul class="uk-navbar-nav uk-hidden-small uk-navbar-flip" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
                     <li><a href="#home" data-uk-smooth-scroll="{offset: 500}">Home</a></li>
+                    <li><a href="#skills" data-uk-smooth-scroll="{offset: 500}">Skills</a></li>
                     <li><a href="#work" data-uk-smooth-scroll="{offset: 300px}">Work</a></li>
                     <li><a href="#about" data-uk-smooth-scroll="{offset: 500}">About</a></li>
                     <li><a href="#contact" data-uk-smooth-scroll="{offset: 500}">Contact</a></li>
@@ -54,16 +55,98 @@
                 <div class="uk-vertical-align uk-height-viewport">
                     <div class="uk-vertical-align-middle">
                         <img class="hero-img" src="images/me.jpg" width="300" alt="" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
-                        <h1 class="uk-h1 hero-text" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">My name is Aakanksha <br>I am a Front End Developer in Bangalore.</h1>
-                        <a href="#work" class="uk-button uk-button-large uk-button-primary" data-uk-smooth-scroll  data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">View my Work</a> <a href="#downloads" class="uk-button uk-button-large uk-button-primary" data-uk-smooth-scroll  data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">Get Resume</a>
+                        <h1 class="uk-h1 hero-text" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">My name is Aakanksha <br>I am a <br>
+                        <span id="my-job">Front End Developer</span> </h1>
+                        <a href="#skills" class="uk-button uk-button-large uk-button-primary" data-uk-smooth-scroll  data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">Know more about me</a> <a href="#downloads" class="uk-button uk-button-large uk-button-primary" data-uk-smooth-scroll  data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">Get Resume</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="card-blk" id="skills"> 
+            <div class="uk-container uk-container-center">
+                <div class="blk-title uk-text-center">
+                    <span>Cards on the table</span>
+                </div>
+                <hr>
+
+                <div class="uk-grid">
+                    <div class="uk-width-large-1-4">
+                       <div class="flip-container" data-uk-scrollspy="{cls:'flip', delay:600}" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <h3>Skillsets &amp; Technologies</h3>
+                                </div>
+                                <div class="back">
+                                <ul>
+                                    <li>HTML 4/5</li>
+                                    <li>CSS 3 </li>
+                                    <li>Javascript</li>
+                                    <li>HTML/CSS Frameworks (Bootstrap 2/3, Foundation 5, Skeleton, HTML 5 Boilerplate)</li>
+                                    <li>JS MVC Frameworks (Angular)</li>
+                                    <li>CSS Preprocessors (LESS, SASS, Stylus)</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-large-1-4">
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <h3>Technical Know-hows</h3>
+                                </div>
+                                <div class="back">
+                                    <ul>
+                                        <li>High Fidelity Prototyping</li>
+                                        <li>User Centric Design</li>
+                                        <li>Heuristic Evaluations</li>
+                                        <li>Localisation, Internationalisation</li>
+                                        <li>Testing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-large-1-4">
+                        <div class="flip-container" data-uk-scrollspy="{cls:'flip', delay:600}" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                   <h3>Tools &amp; IDE's</h3> 
+                                </div>
+                                <div class="back">
+                                    <ul>
+                                        <li>Prototyping tools like Balsamiq</li>
+                                        <li>Sublime Text with plugins (Emmet, Linters), Brackets, Atom, Dreamweaver and Visual Studio</li>
+                                        <!-- <li>Chrome Dev Tools, Firebug</li> -->
+                                        <li>Yeoman, Grunt, Bower, Gulp </li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-large-1-4">
+                        <div class="flip-container" data-uk-scrollspy="{cls:'flip', delay:600}" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                                <div class="front">
+                                    <h3>Rest of it..</h3>
+                                </div>
+                                <div class="back">
+                                    Saini
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
         <div class="work-blk" id="work"> 
             <div class="uk-container uk-container-center">
                 <div class="blk-title uk-text-center">
-                    <span>Projects and Skills</span>
+                    <span>Projects</span>
                 </div>
                 <hr>
 
@@ -83,10 +166,10 @@
                                 Hewlett Packard
                             </div>
                             <div class="crole">
-                                &#123; Front End &#125;
+                                &#123; Front End &#125;  &#123; 4 Projects &#125; 
                             </div>
                             <div class="crole-intro">
-                                Work here as a Front End Developer, on wide range of interfaces including Tablets and Phones.
+                                Work here as a Front End Developer, on wide range of interfaces including web, tablets and hand-held devices.
                             </div>
                             
                         </div>
@@ -109,12 +192,18 @@
                                 &#123; Design and Front End &#125;
                             </div>
                             <div class="crole-intro">
-                                Helped Alwaysonvacation in building their new owner portal, and interface for helping owners of vacation homes to add and list their properties.
+                                Designed and built the new owner portal and interface for helping owners of vacation homes to add and list their properties for AlwaysOnVacation.
                             </div>
                             
                         </div>
                     </div>
-
+                   
+                </div>
+                 <div class="blk-title other-pro-title uk-text-center">
+                    <span>Other Projects</span>
+                </div>
+                <hr>
+                <div class="uk-grid">
                     <div class="uk-width-medium-1-2 uk-width-large-1-2 uk-width-small-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:600}">
                         <div class="uk-overlay">
                             <img src="images/projects/dz/poster-dz.png" alt="">
@@ -133,12 +222,12 @@
                                 &#123; Design and Front End &#125;
                             </div>
                             <div class="crole-intro">
-                                Helped my friends to re-design and re-do the whole site to look like a modern day e-commerce site.
+                               Designz is a corporate gifting solutions firm. <br> Helped my friends to re-design and re-build the whole site to look like a modern day e-commerce site.
                             </div>
                             
                         </div>
                     </div>
-
+                    
                     <div class="uk-width-medium-1-2 uk-width-large-1-2 uk-width-small-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:600}">
                         <div class="uk-overlay">
                             <img src="images/projects/sg/poster-sg.png" alt="">
@@ -157,7 +246,7 @@
                                 &#123; Concept, Design and Front End &#125; 
                             </div>
                             <div class="crole-intro">
-                                Idealized, Designed and developed this as part of Human Computer Interaction Course (Coursera) and making it live soon.
+                                Idealized, Designed and developed this as part of Human Computer Interaction Course (University of California, San Diego) and making it live soon.
                             </div>
                             
                         </div>
@@ -169,7 +258,7 @@
         <div class="about-blk" id="about">
             <div class="uk-container uk-container-center">
                 <div class="blk-title uk-text-center">
-                    <span>A little about myself</span>
+                    <span>A little about me</span>
                 </div>
                 <hr>
                 <div class="ui-text-center about-desc ui-width-5-8" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
@@ -177,7 +266,7 @@
                         I build <strong>amazing experiences</strong> for the <strong><i class="uk-icon-laptop"></i> web</strong>, <strong><i class="uk-icon-tablet"></i> tablets</strong>, <strong><i class="uk-icon-mobile"></i> mobile</strong> and beyond. Currently, I am a part of the <strong>User Experience Studio</strong> at <strong>Hewlett Packard</strong>. <br>My work includes building next generation web, tablet and mobile applications in the <strong>Consumer Travel</strong> domain.
                     </p>
                     <p>
-                        I have been lucky enough to have worked on a variety of projects in a short time. Having worked closely with designers, I think I have that <strong> <i class="uk-icon-eye"></i> artistic eye</strong>. 
+                        I have been lucky enough to have worked on a variety of projects in a short time. Having worked closely with designers, I have that <strong> artistic eye <i class="uk-icon-eye"></i></strong>. 
                     </p>
                     <p>
                         I love being a <strong>front end developer</strong> as it tickles my brain in a good way. It is the hottest job one can have and when you <strong> <i class="uk-icon-heart"></i> </strong> what you do, it doesn’t feel like work!
@@ -193,7 +282,7 @@
         <div class="contact-blk" id="contact">
             <div class="uk-container uk-container-center">
                 <div class="blk-title uk-text-center">
-                    <span>Reach me at</span>
+                    <span>Find me online</span>
                 </div>
                 <hr>
 
@@ -207,6 +296,7 @@
                     <a data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}" class="social-icons" target="_blank" href="http://about.me/aakanksha991" title="About.me"><i class="uk-icon-user"></i></a>
 
                 </div>
+                <div class="contact-text" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1400}">Mail me at aakanksha991[at]gmail[dot]com</div>
             </div>
         </div>
 
@@ -227,25 +317,28 @@
 
         <div class="footer">
             <div class="uk-container uk-container-center">
-                <div class="uk-text-center footer-links">
-                    <a href="#home" data-uk-smooth-scroll>Home</a>
-                    <i class="uk-icon-star"></i>
-                    <a href="#work" data-uk-smooth-scroll>Work</a>
-                    <i class="uk-icon-star"></i>
-                    <a href="#about" data-uk-smooth-scroll>About</a>
-                    <i class="uk-icon-star"></i>
-                    <a href="#contact" data-uk-smooth-scroll>Contact</a>
-                    <i class="uk-icon-star"></i>
-                    <a href="#downloads" data-uk-smooth-scroll>Downloads</a>
+                <div class="uk-text-center">
+                    <div class="footer-links">
+                        <a href="#home" data-uk-smooth-scroll>Home</a>
+                        <i class="uk-icon-star"></i>
+                        <a href="#work" data-uk-smooth-scroll>Work</a>
+                        <i class="uk-icon-star"></i>
+                        <a href="#about" data-uk-smooth-scroll>About</a>
+                        <i class="uk-icon-star"></i>
+                        <a href="#contact" data-uk-smooth-scroll>Contact</a>
+                        <i class="uk-icon-star"></i>
+                        <a href="#downloads" data-uk-smooth-scroll>Downloads</a>
+                    </div>
+                    <div class="build-text">Built with HTML5, CSS3, UIkit, jQuery on a Windows 8.1 laptop (Yes, it can do good stuff too)</div>
+                    <div class="copyright">&copy; 2014 | Aakanksha Saini</div>
                 </div>
-                <div class="uk-text-center copyright">&copy; 2014 | Aakanksha Saini</div>
             </div>
         </div>
 
         <div id="hpWork" class="uk-modal">
             <div class="uk-modal-dialog uk-modal-dialog-large">
                 <a class="uk-modal-close uk-close"></a>
-                <div class="project-det">
+                <div class="project-det uk-overflow-container">
                     <div class="uk-grid">
                         <div class="uk-width-large-1-2 uk-width-small-1-1">
                             <div class="proj-name">
@@ -257,18 +350,27 @@
                             <div class="skill-cont">
                                 <span>HTML/5</span> <span>CSS/3</span> <span>LESS</span> <span>WinJS</span>
                             </div>
+                             <div class="image-thumbs">
+                                <a href="#ife1"><img src="images/projects/hp/ife-poster.png" alt=""></a>
+                                <a href="#ife3"><img src="images/projects/hp/ife3.png" alt=""></a>
+                                <a href="#ife2"><img src="images/projects/hp/ife2.png" alt=""></a>
+                            </div>
                         </div>
                         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
-                            <div class="img-wrap">
-                                <img src="images/projects/hp/ife-poster.png" alt="">
+                            <div class="img-wrap img-gallery">
+                                <img class="bla" id="ife1" src="images/projects/hp/ife-poster.png" alt="">
+                                <img class="bla" id="ife2" src="images/projects/hp/ife2.png" alt="">
+                                <img class="bla" id="ife3" src="images/projects/hp/ife3.png" alt="">
                             </div>
                         </div>
                     </div>
 
                     <div class="uk-grid">
                         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
-                            <div class="img-wrap">
-                                <img class="project-img" src="images/projects/hp/ndc.png" alt="">
+                            <div class="img-wrap img-gallery">
+                                <img class="bla" id="ndca" src="images/projects/hp/ndc1.png" alt="">
+                                <img class="bla" id="ndcb" src="images/projects/hp/ndc2.png" alt="">
+                                <img class="bla" id="ndcc" src="images/projects/hp/ndc3.png" alt="">
                             </div>
                         </div>
                         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
@@ -284,25 +386,61 @@
                             <div class="skill-cont">
                                 <span>HTML/5</span> <span>CSS/3</span> <span>AngularJS</span> <span>Bootstrap</span> <span>LESS</span>
                             </div>
+                             <div class="image-thumbs">
+                                <a href="#ndca"><img src="images/projects/hp/ndc1.png" alt=""></a>
+                                <a href="#ndcb"><img src="images/projects/hp/ndc2.png" alt=""></a>
+                                <a href="#ndcc"><img src="images/projects/hp/ndc3.png" alt=""></a>
+                            </div>
+                           
                         </div>
                     </div>
 
                     <div class="uk-grid">
                         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+                            <div class="img-wrap img-gallery">
+                                <img class="bla" id="saa" src="images/projects/hp/sa1.png" alt="">
+                                <img class="bla" id="sab" src="images/projects/hp/sa2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
                             <div class="proj-name">
-                                InFlight Assistance App
+                               Sales Agent 
+                            </div>
+                            <div class="proj-desc">
+                                
+                            </div>
+                            <div class="skill-cont">
+                                <span>HTML/5</span> <span>CSS/3</span> <span>jQuery</span> <span>Bootstrap</span> <span>LESS</span>
+                            </div>
+                            <div class="image-thumbs">
+                                <a href="#saa"><img src="images/projects/hp/sa1.png" alt=""></a>
+                                <a href="#sab"><img src="images/projects/hp/sa2.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-grid">
+                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+                            <div class="img-wrap img-gallery">
+                                <img class="bla" id="vcba" src="images/projects/hp/vcb1.png" alt="">
+                                <img class="bla" id="vcbb" src="images/projects/hp/vcb2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+                            <div class="proj-name">
+                               InFlight Assistance App
                             </div>
                             <div class="proj-desc">
                                 This prototype was built to help travelers during a flight by providing them a interface to interact with the InFlight crew with very specific requests, to help them serve better.
+
                             </div>
                             <div class="skill-cont">
                                 <span>HTML/5</span> <span>CSS/3</span> <span>AngularJS</span> <span>Bootstrap</span> <span>LESS</span>
                             </div>
-                        </div>
-                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
-                            <div class="img-wrap">
-                                <img class="project-img" src="images/projects/hp/vcb.png" alt="">
+                             <div class="image-thumbs">
+                                <a href="#vcba"><img src="images/projects/hp/vcb1.png" alt=""></a>
+                                <a href="#vcbb"><img src="images/projects/hp/vcb2.png" alt=""></a>
                             </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -393,7 +531,7 @@
                                 SkilledGeek
                             </div>
                             <div class="proj-desc">
-                                Developed this as spart of my HCI course (Coursera). The idea was to provide a service which helps one create/update or share a complete and better comprehensive resume which fits the context for both recruiter and the candidate, in the least time and effort possible.
+                                Developed this as a part of my HCI course (University of California, San Diego). The idea was to provide a service which helps one create/update or share a complete and better comprehensive resume which fits the context for both recruiter and the candidate, in the least time and effort possible.
 
                                 <br><br>
                                 The App was then user evaluated to find UI issues and put through Heuristic Evaluations.
