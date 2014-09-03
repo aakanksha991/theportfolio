@@ -575,29 +575,58 @@ hr {
 
 .front{
     text-align: center;
-   padding:15px;
-    border:1px solid #333;
+    padding:15px;
+    border:1px solid #cccccc;
+    border-radius: 4px;
     margin:10px;
     h3{
         font-weight: 200;
     }
     .the-top {
-        border:1px solid #333;
-        
+        border:1px solid #999;
+        border-radius: 4px;
 
     }
 
 }
 .back{
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px 15px;
     line-height: 170%;
+    border:1px solid #cccccc;
+    .the-top {
+        padding:15px;
+        /*padding-top: 20px;*/
+        border:1px solid #999;
+        border-radius: 4px;
+        text-align: center;
+        div {
+            font-family: 'Droid Serif', serif;
+            color: #777;
+            span {
+                font-size: 13px;
+                color: #999;
+            }
+        }
+    }
 }
 #my-job{
     font-weight: 400;
 }
-
+.card-content {
+    margin-top: 100px;
+    .card-title {
+        font-family: 'Droid Serif', serif;
+        font-size: 24px;
+        text-align: center;
+        color: #999;
+        img {
+            /*display: block;*/
+            width:80px;
+        }
+    }
+}
 .card-icons{
     font-size: 3em;
 }
