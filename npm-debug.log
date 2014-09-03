@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'main-bower-files',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 warn invalid config https-proxy=""
+5 warn invalid config Must be a full url with 'http://'
+6 error Failed to parse json
+6 error Unexpected string
+7 error File: /Users/devanandb/work/lance/theportfolio/package.json
+8 error Failed to parse package.json data.
+8 error package.json must be actual JSON, not just JavaScript.
+8 error
+8 error This is not a bug in npm.
+8 error Tell the package author to fix their package.json file. JSON.parse
+9 error System Darwin 14.0.0
+10 error command "node" "/usr/local/bin/npm" "install" "main-bower-files" "--save"
+11 error cwd /Users/devanandb/work/lance/theportfolio
+12 error node -v v0.10.29
+13 error npm -v 1.4.14
+14 error file /Users/devanandb/work/lance/theportfolio/package.json
+15 error code EJSONPARSE
+16 verbose exit [ 1, true ]
