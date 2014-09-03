@@ -11,7 +11,7 @@
     padding: 0.2em 0;
 }
 html {
-    
+
     /*height: 100%;*/
 }
 body{
@@ -99,7 +99,7 @@ body{
 
 .hero-blk {
     /*padding-top: 85px;*/
-    background: url('../images/bghero.jpg') no-repeat center center; 
+    background: url('../images/bghero.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -169,7 +169,7 @@ body{
             animation:bounce 2s linear infinite;
             font-size: 20px;
         }
-    }   
+    }
 }
 
 .dwnld-btns {
@@ -207,7 +207,7 @@ hr.gradient {
     p {
         font-size: 14px;
     }
-   
+
 }
 hr {
     margin:40px 0px;
@@ -228,7 +228,7 @@ hr {
     margin-bottom: 40px !important;
     .cname {
         font-size: 24px;
-        
+
         font-family: 'Droid Serif', serif;
         margin-bottom: 12px;
     }
@@ -411,7 +411,7 @@ hr {
         &:hover .per-skill.second{
             transform: translate(0px,-135px);
         }
-        
+
          &:hover .per-skill.third{
             transform: translate(135px,0px);
         }
@@ -509,6 +509,7 @@ hr {
 /* entire container, keeps perspective */
 .flip-container {
     perspective: 1000;
+    /*padding:10px;*/
 }
     /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -539,10 +540,12 @@ hr {
 /* hide back of pane during swap */
 .front, .back {
     backface-visibility: hidden;
-    background-color: #8bacbd;
-   /* position: absolute;
+
+    background-color: #ffffff;
+    position: absolute;
     top: 0;
-    left: 0;*/
+    left: 0;
+    color: #777;
 }
 
 /* front pane, placed above back */
@@ -557,24 +560,64 @@ hr {
 
 .front{
     text-align: center;
-   /* padding-top: 50%;
-    padding-left: 10px;
-    padding-right: 10px;*/
+    width: 100%;
+    padding:15px;
+    border:1px solid #cccccc;
+    border-radius: 4px;
+    /*margin:10px;*/
     h3{
         font-weight: 200;
     }
+    .the-top {
+        border:1px solid #999;
+        border-radius: 4px;
+
+    }
+
 }
 .back{
     text-align: left;
-    font-size: 18px;
+    width: 100%;
+    /*font-size: 18px;*/
     /*padding: 15px 15px;*/
     line-height: 170%;
-    margin-top: -380px;
+    /*margin-top: -380px;*/
+    font-size: 16px;
+    padding: 15px 15px;
+    line-height: 170%;
+    border:1px solid #cccccc;
+    .the-top {
+        padding:15px;
+        /*padding-top: 20px;*/
+        border:1px solid #999;
+        border-radius: 4px;
+        text-align: center;
+        div {
+            font-family: 'Droid Serif', serif;
+            color: #777;
+            span {
+                font-size: 13px;
+                color: #999;
+            }
+        }
+    }
 }
 #my-job{
     font-weight: 400;
 }
-
+.card-content {
+    margin-top: 100px;
+    .card-title {
+        font-family: 'Droid Serif', serif;
+        font-size: 24px;
+        text-align: center;
+        color: #999;
+        img {
+            /*display: block;*/
+            width:80px;
+        }
+    }
+}
 .card-icons{
     font-size: 3em;
 }
