@@ -521,7 +521,7 @@ hr {
 .flip-container, .front, .back {
     border-radius: 3px;
     color: #fff;
-    width: 260px;
+    /*width: 260px;*/
     height: 360px;
     margin-bottom: 20px !important;
 }
@@ -537,9 +537,9 @@ hr {
 .front, .back {
     backface-visibility: hidden;
     background-color: #8bacbd;
-    position: absolute;
+   /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0;*/
 }
 
 /* front pane, placed above back */
@@ -554,9 +554,9 @@ hr {
 
 .front{
     text-align: center;
-    padding-top: 50%;
+   /* padding-top: 50%;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px;*/
     h3{
         font-weight: 200;
     }
@@ -564,8 +564,9 @@ hr {
 .back{
     text-align: left;
     font-size: 18px;
-    padding: 15px 15px;
+    /*padding: 15px 15px;*/
     line-height: 170%;
+    margin-top: -380px;
 }
 #my-job{
     font-weight: 400;
