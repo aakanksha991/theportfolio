@@ -312,7 +312,7 @@ hr {
 }
 /* ABOUT BLOCK */
 .about-blk{
-    background: #FAC5C0;
+    background: #e5e3d7;
     padding:60px 0px;
     .blk-title {
         color: #333;
@@ -346,6 +346,9 @@ hr {
             font-size: 11px;
         }
     }
+        .uk-icon-heart{
+            margin-left: 2px;
+        }
 }
 .about-desc {
     font-size: 18px;
@@ -621,6 +624,9 @@ hr {
             padding: 4px 6px;
         }
     }
+    .card-blk, .about-blk, .work-blk, .downloads-blk, .contact-blk{
+        padding-top: 30px;
+    }
 }
 
 @media (max-width:550px){
@@ -629,4 +635,8 @@ hr {
         width: 65px;
         margin-bottom: 10px;
     }
+}
+
+.hero-btns{
+    margin-bottom: 10px;
 }
