@@ -12,20 +12,7 @@ $(document).ready(function() {
                 $text.dequeue();
             });
             $text.fadeIn(500);
-            // $text.queue(function(){
-            //     if ( i == items.length -1 ) {
-            //         loop(delay);   
-            //     }
-            //     $text.dequeue();
-            // });
         });
     }
-
     loop(delay);
-
-    $("#ife1").css('opacity','1');
-    $("#ndca").css('opacity','1');
-    $("#saa").css('opacity','1');
-    $("#vcba").css('opacity','1');
-    
 });
