@@ -6,12 +6,12 @@ $(document).ready(function() {
     
     function loop (delay) {
         $.each( items, function ( i, elm ){
-            $text.delay(delay).fadeOut(400);
+            $text.delay(delay).fadeOut(500);
             $text.queue(function(){
                 $text.html( items[i] );
                 $text.dequeue();
             });
-            $text.fadeIn(400);
+            $text.fadeIn(500);
             // $text.queue(function(){
             //     if ( i == items.length -1 ) {
             //         loop(delay);   
