@@ -401,7 +401,8 @@ hr {
 .card-blk{
     background-color:#e5e3d7;
     color: #333;
-    padding: 100px 0px;
+    padding: 50px 0px;
+    padding-bottom: 170px;
     .blk-title{
         color: inherit;
     }
@@ -423,7 +424,7 @@ hr {
     border-radius: 3px;
     color: #333;
     /*width: 260px;*/
-    height: 360px;
+    height: 400px;
     margin-bottom: 20px !important;
 }
 
@@ -471,11 +472,11 @@ hr {
     h3{
         font-weight: 200;
     }
-    /*.the-top {
-        border:1px solid #999;
+    .the-top {
+        border:1px solid #cccccc;
         border-radius: 4px;
 
-    }*/
+    }
 
 }
 .back{
@@ -487,8 +488,11 @@ hr {
     line-height: 170%;
     border:1px solid #cccccc;
     color: #428bca !important;
+
     .the-top {
         padding:15px;
+    border:1px solid #cccccc;
+        border-radius: 4px;
         text-align: center;
         div {
             font-size: 19px;
@@ -504,11 +508,21 @@ hr {
 }
 
 .card-content {
-    margin-top: 100px;
+    margin-top: 90px;
     .card-title {
-        /*font-family: 'Droid Serif', serif;*/
-        font-size: 24px;
+        font-family: 'Droid Serif', serif;
+        font-size: 22px;
         text-align: center;
+        i {
+            font-size: 60px;
+            width: 120px;
+            height:120px;
+            padding-top: 30px;
+            border:1px solid #aaaaaa;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            color: #999999;
+        }
         /*img {
             display: block;
             width:80px;
