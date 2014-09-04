@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>Aakanksha Saini | Portfolio</title>
         <meta name="description" content="Portfolio of Aakanksha Saini, Front End Developer">
+        <meta property="og:title" content="Portfolio of Aakanksha Saini">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://aakankshasaini.me/">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'> -->
@@ -23,15 +26,14 @@
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
+
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <nav class="uk-navbar uk-navbar-attached " data-uk-sticky>
             <div class="uk-container uk-container-center">
-
                 <a class="uk-navbar-brand uk-hidden-small" href="#" data-uk-smooth-scroll><!--img class="uk-margin uk-margin-remove" src="images/logo.png" width="30px" title="Aakanksha" alt="Aakanksha"--><!-- <img class="hero-img" src="images/me.jpg" width="30" alt=""> --> Aakanksha</a>
-
                 <ul class="uk-navbar-nav uk-hidden-small uk-navbar-flip" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
                     <li><a href="#home" data-uk-smooth-scroll="{offset: 500}">Home</a></li>
                     <li><a href="#skills" data-uk-smooth-scroll="{offset: 500}">Skills</a></li>
@@ -40,11 +42,8 @@
                     <li><a href="#contact" data-uk-smooth-scroll="{offset: 500}">Contact</a></li>
                     <li><a href="#downloads" data-uk-smooth-scroll="{offset: 500}">Downloads</a></li>
                 </ul>
-
                 <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
-
                 <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><!--img src="images/logo_uikit.svg" width="90" height="30" title="UIkit" alt="UIkit"--></div>
-
             </div>
         </nav>
         
@@ -62,7 +61,6 @@
         </div>
 
         <div class="hero-blk uk-height-viewport" id="home">
-            <h1></h1>
             <div class="uk-container uk-align-center uk-container-center">
                 <div class="uk-vertical-align uk-height-viewport">
                     <div class="uk-vertical-align-middle">
@@ -75,118 +73,110 @@
                 </div>
             </div>
         </div>
+
         <div class="card-blk" id="skills"> 
             <div class="uk-container uk-container-center">
                 <div class="blk-title uk-text-center">
                     <span>Cards on the table</span>
                 </div>
                 <hr>
-
                 <div class="uk-grid">
-                    <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-                       <div class="flip-container" data-uk-scrollspy="{cls:'flip', delay:600}" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front ">
+                    <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 uk-container-center">
+                       <div class="animate-wrap">  
+                            <input type="radio" id="ani-1" name="animation" checked>
+                            <input type="radio" id="ani-2" name="animation">
+                            
+                            <div class="animate">
+                                <label for="ani-2" class="front">
                                     <div class="the-top uk-height-1-1">
                                         <div class="card-content uk-height-1-1 uk-vertical-align-middle">
-                                            
-                                            <div class="card-title">Skillsets <br> <img width="80px" src="images/card-heart.png"><br> Technologies</div>
+                                            <div class="card-title"><i class="uk-icon-briefcase"></i><br>Technical Know-hows</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="back">
-                                    <div class="the-top uk-height-1-1">
-                                        <div>HTML 4/5</div>
-                                        <div>CSS 3 </div>
-                                        <div>Javascript</div>
-                                        <div>HTML/CSS Frameworks <span>(Bootstrap 2/3, Foundation 5, Skeleton, HTML 5 Boilerplate)</span></div>
-                                        <div>JS MVC Frameworks <span>(Angular)</span></div>
-                                        <div>CSS Preprocessors <span>(LESS, SASS, Stylus)</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front">
-                                    <div class="the-top uk-height-1-1">
-                                        <div class="card-content uk-height-1-1 uk-vertical-align-middle">
-                                            
-                                            <div class="card-title">Technical <br> <img width="80px" src="images/icon-spade.png"><br> Know-hows</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="back">
+                                </label>
+                                
+                                <label for="ani-1" class="back">
                                     <div class="the-top uk-height-1-1">
                                         <div>High Fidelity Prototyping</div>
                                         <div>User Centric Design</div>
                                         <div>Heuristic Evaluations</div>
-                                        <div>Localisation, Internationalisation</div>
-                                        <div>Testing</div>
+                                        <div>Localization </div>
+                                        <div>Internationalization</div>
+                                        <div>Responsive Web Design</div>
                                     </div>
-                                </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 uk-container-center">
+                        <div class="animate-wrap">  
+                            <input type="radio" id="ani-3" name="banimation" checked>
+                            <input type="radio" id="ani-4" name="banimation">
+                            
+                            <div class="animate">
+                                <label for="ani-4" class="front">
+                                    <div class="the-top uk-height-1-1">
+                                        <div class="card-content uk-height-1-1 uk-vertical-align-middle">
+                                            <div class="card-title"><i class="uk-icon-bolt"></i><br>My Superpowers</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label for="ani-3" class="back">
+                                    <div class="the-top uk-height-1-1">
+                                        <div>HTML5 / CSS3</div>
+                                        <div>Javascript</div>
+                                        <div>jQuery</div>
+                                        <div>HTML/CSS Frameworks</div>
+                                        <span>(Bootstrap 3, Foundation 5, Skeleton, HTML 5 Boilerplate)</span>
+                                        <div>JS Frameworks</div>
+                                        <span>(AngularJS)</span>
+                                        <div>CSS Preprocessors</div>
+                                        <span>(LESS, SASS, Stylus)</span>
+                                    </div>
+                                </label>
                             </div>
                         </div>
                     </div>
 
-                    <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-                        <div class="flip-container" data-uk-scrollspy="{cls:'flip', delay:600}" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front">
-                                    
-                                   <div class="the-top uk-height-1-1">
+
+                    <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1 uk-container-center">
+                        <div class="animate-wrap">  
+                            <input type="radio" id="ani-5" name="canimation" checked>
+                            <input type="radio" id="ani-6" name="canimation">
+                            
+                            <div class="animate">
+                                <label for="ani-6" class="front">
+                                    <div class="the-top uk-height-1-1">
                                         <div class="card-content uk-height-1-1 uk-vertical-align-middle">
-                                            
-                                            <div class="card-title">Tools <br> <img width="80px" src="images/card-diamond.png"><br> IDE's</div>
+                                            <div class="card-title"><i class="uk-icon-bug"></i><br>My Personal Assistants</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="back">
+                                </label>
+                                
+                                <label for="ani-5" class="back">
                                     <div class="the-top uk-height-1-1">
                                         <div>Prototyping tools like Balsamiq</div>
-                                        <div>Sublime Text with plugins <span>(Emmet, Linters)</span>, Brackets, Atom, Dreamweaver and Visual Studio</div>
-                                        <!-- <div>Chrome Dev Tools, Firebug</div> -->
+                                        <div>Sublime Text with plugins</div>
+                                        <span>(Emmet, Linters)</span>
+                                        <div>Brackets <br>Atom <br>Dreamweaver <br> Visual Studio</div>
                                         <div>Yeoman, Grunt, Bower, Gulp </div>
                                         <div>Adobe Photoshop</div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-                        <div class="flip-container" data-uk-scrollspy="{cls:'flip', delay:600}" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front">
-                                   <div class="the-top uk-height-1-1">
-                                        <div class="card-content uk-height-1-1 uk-vertical-align-middle">
-                                            
-                                            <div class="card-title">More <br> <img width="80px" src="images/icon-club.png"><br> of Me</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="the-top uk-height-1-1">
-                                        <div>Quick Learner</div>
-                                        <div>Human Course Interaction (HCI) certificate holder</div>
-                                    </div>
-                                </div>
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>           
         </div>
+
         <div class="work-blk" id="work"> 
             <div class="uk-container uk-container-center">
                 <div class="blk-title uk-text-center">
                     <span>Main Projects</span>
                 </div>
                 <hr>
-
                 <div class="uk-grid">
                     <div class="uk-width-medium-1-2 uk-width-large-1-2 uk-width-small-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">
                         <div class="uk-overlay">
@@ -208,13 +198,12 @@
                             <div class="crole-intro">
                                 Work here as a Front End Developer, on wide range of interfaces including web, tablets and hand-held devices.
                             </div>
-                            
                         </div>
                     </div>
+
                     <div class="uk-width-medium-1-2 uk-width-large-1-2 uk-width-small-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
                         <div class="uk-overlay">
                             <img src="images/projects/aov/poster-aov.png" alt="">
-                            
                             <div class="uk-overlay-area">
                                 <div class="uk-overlay-area-content">
                                     <button class="uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#aovWork'}">View More</button>
@@ -231,20 +220,19 @@
                             <div class="crole-intro">
                                 Designed and built the new owner portal and interface for helping owners of vacation homes to add and list their properties for AlwaysOnVacation.
                             </div>
-                            
                         </div>
                     </div>
-                   
                 </div>
+
                  <div class="blk-title other-pro-title uk-text-center">
                     <span>Other Projects</span>
                 </div>
                 <hr>
+
                 <div class="uk-grid">                    
                     <div class="uk-width-medium-1-2 uk-width-large-1-2 uk-width-small-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:600}">
                         <div class="uk-overlay">
                             <img src="images/projects/sg/poster-sg.png" alt="">
-                            
                             <div class="uk-overlay-area">
                                 <div class="uk-overlay-area-content">
                                     <button class="uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#skilledgeekWork'}">View More</button>
@@ -261,14 +249,12 @@
                             <div class="crole-intro">
                                 Idealized, Designed and developed this as part of Human Computer Interaction Course (University of California, San Diego) and making it live soon.
                             </div>
-                            
                         </div>
                     </div>
 
                     <div class="uk-width-medium-1-2 uk-width-large-1-2 uk-width-small-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:600}">
                         <div class="uk-overlay">
                             <img src="images/projects/dz/poster-dz.png" alt="">
-                            
                             <div class="uk-overlay-area">
                                 <div class="uk-overlay-area-content">
                                     <button class="uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#designzWork'}">View More</button>
@@ -285,7 +271,6 @@
                             <div class="crole-intro">
                                Designz is a corporate gifting solutions firm. <br> Helped my friends to re-design and re-build the whole site to look like a modern day e-commerce site.
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -300,7 +285,7 @@
                 <hr>
                 <div class="ui-text-center about-desc ui-width-5-8" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}">
                     <p>
-                        I build <strong>amazing experiences</strong> for the <strong><i class="uk-icon-laptop"></i> web</strong>, <strong><i class="uk-icon-tablet"></i> tablets</strong>, <strong><i class="uk-icon-mobile"></i> mobile</strong> and beyond. Currently, I am a part of the <strong>User Experience Studio</strong> at <strong>Hewlett Packard</strong>. <br>My work includes building next generation web, tablet and mobile applications in the <strong>Consumer Travel</strong> domain.
+                        I build <strong>amazing experiences</strong> for the <strong><i class="uk-icon-laptop"></i> web</strong>, <strong><i class="uk-icon-tablet"></i> tablets</strong>, <strong><i class="uk-icon-mobile"></i> mobile</strong> and beyond. Currently, I am a part of the <strong>User Experience Product Innovation Studio</strong> at <strong>Hewlett Packard</strong>. <br>My work includes building next generation web, tablet and mobile applications in the <strong>Consumer Travel</strong> domain.
                     </p>
                     <p>
                         I have been lucky enough to have worked on a variety of projects in a short time. Having worked closely with designers, I have that <strong> artistic eye <i class="uk-icon-eye"></i></strong>. 
@@ -308,12 +293,10 @@
                     <p>
                         I love being a <strong>front end developer</strong> as it tickles my brain in a good way. It is the hottest job one can have and when you <strong> <i class="uk-icon-heart"></i> </strong> what you do, it doesn’t feel like work!
                     </p>
-                   
                     <p>
                         When I am not getting my hands dirty with HTML and CSS, one can find me reading books. <strong>Nerd Alert!</strong><br>I am a <img src="images/icon-bag.png" width="24px" alt=""> shopaholic and dessertoholic too. Yes, I have <img src="images/icon-dessert.png" width="24px" alt=""> desserts for main course! <br>Also, I am a big &nbsp;  <img src="images/icon-throne.png" width="24px" alt=""> &nbsp; Game of thrones fan. <br><strong>Valar Morghulis!</strong> 
                     </p>
                 </div>
-
             </div>
         </div>
 
@@ -323,7 +306,6 @@
                     <span>Find me online</span>
                 </div>
                 <hr>
-
                 <div class="uk-container-center social-btns">
                     <a data-uk-scrollspy="{cls:'uk-animation-fade'}" class="social-icons" href="mailto:aakanksha991@gmail.com" title="Mail Me!"><i class="uk-icon-envelope-o"></i></a>
                     <a data-uk-scrollspy="{cls:'uk-animation-fade', delay:200}" class="social-icons" target="_blank" href="https://www.linkedin.com/in/aakankshasaini" title="Linkedin"><i class="uk-icon-linkedin"></i></a>
@@ -332,7 +314,6 @@
                     <a data-uk-scrollspy="{cls:'uk-animation-fade', delay:800}" class="social-icons" target="_blank" href="http://instagram.com/aakanksha991" title="Instagram"><i class="uk-icon-instagram"></i></a>
                     <a data-uk-scrollspy="{cls:'uk-animation-fade', delay:1000}" class="social-icons" target="_blank" href="https://plus.google.com/+AakankshaSainiaakanksha991/about" title="Google+"><i class="uk-icon-google-plus"></i></a>
                     <a data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}" class="social-icons" target="_blank" href="http://about.me/aakanksha991" title="About.me"><i class="uk-icon-user"></i></a>
-
                 </div>
                 <div class="contact-text" data-uk-scrollspy="{cls:'uk-animation-fade', delay:1200}">You can mail me at aakanksha991[at]gmail[dot]com</div>
             </div>
@@ -345,7 +326,6 @@
                     <p>&#123; For those who still like printing things! &#125;</p>
                 </div>
                 <hr>
-
                 <div class="uk-container-center uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 dwnld-btns">
                     <a data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:400}" class="uk-button uk-button-primary uk-button-large" download="Aakanksha_CV" href="files/Aakanksha_CV.docx"><i class="uk-icon-file-word-o"></i> &nbsp;Get .docx</a>
                     <a data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:400}" class="uk-button uk-button-primary uk-button-large" href="files/Aakanksha_CV.pdf" download="Aakanksha_CV"><i class="uk-icon-file-pdf-o"></i> &nbsp;Get .pdf</a>
@@ -369,7 +349,7 @@
                         <i class="uk-icon-star"></i>
                         <a href="#downloads" data-uk-smooth-scroll>Downloads</a>
                     </div>
-                    <div class="build-text">Built with HTML5, CSS3, UIkit, jQuery and  <i class="uk-icon-heart"></i> on a Windows 8.1 laptop (Yes, it can do good stuff too)</div>
+                    <div class="build-text">Built with HTML5, CSS3, <a href="http://getuikit.com/">UIkit</a>, <a href="http://jquery.com/">jQuery </a>and  <i class="uk-icon-heart"></i> on a Windows 8.1 laptop (Yes, it can do good stuff too)</div>
                     <div class="copyright">&copy; 2014 | Aakanksha Saini</div>
                 </div>
             </div>
@@ -390,7 +370,7 @@
                             <div class="skill-cont">
                                 <span>HTML/5</span> <span>CSS/3</span> <span>LESS</span> <span>WinJS</span>
                             </div>
-                             <div class="image-thumbs">
+                            <div class="image-thumbs">
                                 <div data-uk-switcher="{connect:'#ife'}">
                                     <div><a href=""><img src="images/projects/hp/ife-poster.png" alt=""></a></div>
                                     <div><a href=""><img src="images/projects/hp/ife2.png" alt=""></a></div>
@@ -430,7 +410,6 @@
                                 NDC (New Distribution Capability) is a travel industry-supported program (NDC Program) launched by IATA for the development and market adoption of a new, XML-based data transmission standard (NDC Standard). <br>
                                 <br>
                                 Priceaway was a prototype to showcase these new capabilities as modules and as how they could improve the whole travel experience. This is an ongoing Project.
-
                             </div>
                             <div class="skill-cont">
                                 <span>HTML/5</span> <span>CSS/3</span> <span>AngularJS</span> <span>Bootstrap</span> <span>LESS</span>
@@ -443,7 +422,6 @@
                                     <div><a href=""><img src="images/projects/hp/ndc4.png" alt=""></a></div>
                                 </div>
                             </div>
-                           
                         </div>
                     </div>
 
@@ -455,7 +433,7 @@
                                     <div><img src="images/projects/hp/sa2.png" alt=""></div>
                                 </div>
                             </div>
-                    </div>
+                        </div>
                         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
                             <div class="proj-name">
                                Sales Agent 
@@ -473,7 +451,7 @@
                                 </div>
                             </div>
                         </div>
-                </div>
+                    </div>
                     <div class="uk-grid">
                         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
                             <div class="img-wrap">
@@ -502,8 +480,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
         </div>
 
         <div id="aovWork" class="uk-modal">
@@ -521,10 +499,21 @@
                             <div class="skill-cont">
                                 <span>HTML/5</span> <span>CSS/3</span> <span>AngularJS</span> <span>Yeoman</span> <span>Grunt</span> <span>Bower</span> <span>Bootstrap</span> <span>SASS</span>
                             </div>
+                            <div class="image-thumbs">
+                                <div data-uk-switcher="{connect:'#aov'}">
+                                    <div><a href=""><img src="images/projects/aov/aov-home.png" alt=""></a></div>
+                                    <div><a href=""><img src="images/projects/aov/aov2.png" alt=""></a></div>
+                                    <div><a href=""><img src="images/projects/aov/aov3.png" alt=""></a></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
                             <div class="img-wrap">
-                                <img  class="project-img" src="images/projects/aov/aov-home.png" alt="">
+                                <div id="aov" class="uk-switcher">
+                                    <div><img src="images/projects/aov/aov-home.png" alt=""></div>
+                                    <div><img src="images/projects/aov/aov2.png" alt=""></div>
+                                    <div><img src="images/projects/aov/aov3.png" alt=""></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -605,25 +594,9 @@
                             </div>
                         </div>
                     </div>
-
-                   <!--  <div class="uk-grid">
-                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
-                            <img  class="project-img" src="images/projects/hp/ife-poster.png" alt="">
-                        </div>
-                        <div class="uk-width-1-2">
-                            <div class="proj-name">
-                                InFlight Entertainment Windows 8 App
-                            </div>
-                            <div class="proj-desc">
-                                Built a native  application using HTML5, CSS3 and WInJS stack using all the native windows 8 elements and templating library. Used CSS3 grids (only supported by IE yet) to layout asymmetrical tiles and content.
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
-
-        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

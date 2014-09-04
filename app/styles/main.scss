@@ -6,23 +6,20 @@
 
 .browsehappy {
     margin: 0.2em 0;
-    /*background: #ccc;*/
     color: #000;
     padding: 0.2em 0;
 }
 html {
-
     /*height: 100%;*/
 }
 body{
     margin-top: -85px;
-    /*font-family: 'Roboto', sans-serif;*/
-    /*padding-top: 60px;*/
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 300;
     background: none !important;
 }
 
+/* ANIMATIONS*/
 @-webkit-keyframes bounce{
     0% {-webkit-transform: translateY(0px);}
     25% {-webkit-transform: translateY(-5px);}
@@ -30,8 +27,9 @@ body{
     75% {-webkit-transform: translateY(5px);}
     100% {-webkit-transform: translateY(0px);}
 }
+/* ANIMATIONS END */
 
-
+/* NAVIGATION BAR STYLES */
 .uk-navbar {
     z-index: 100;
     padding: 15px 0;
@@ -58,9 +56,6 @@ body{
     }
 }
 
-.uk-modal-dialog-large {
-    /*width: 100%;*/
-}
 .uk-navbar .uk-navbar-nav > li > a {
     height: 40px;
     margin: 0;
@@ -95,10 +90,11 @@ body{
 
 /* OnClick */
 .uk-navbar .uk-navbar-nav > li > a:active { background-color: transparent; }
+/* NAVIGATION BAR STYLES END */
 
 
+/* HERO BLOCK STYLES */
 .hero-blk {
-    /*padding-top: 85px;*/
     background: url('../images/bghero.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -126,65 +122,17 @@ body{
     width:100%;
     text-align: center;
 }
-.my-name{
-    font-size: 30px;
-    /*line-height: 5px;*/
-    font-weight: 200;
-    color: #777;
-    text-decoration: none !important;
-    cursor: pointer;
-    &:hover{
-        color: #E3648F !important;
-    }
+
+/* #my-job{
+    font-weight: 400;
+} */
+
+.hero-btns{
+    margin-bottom: 10px;
 }
-/*.navbar{
-    box-shadow:0px 1px 10px #CCC;
-}*/
+/* HERO BLOCK STYLES END */
 
-
-.introduction-blk{
-    /*background: url('../images/nature.jpg') no-repeat;*/
-    background-size: 100% 100%;
-    text-align: center;
-    padding: 200px 0px;
-    .intro-text{
-        color: #333;
-        font-weight: 200;
-        margin: auto;
-        z-index: 9999;
-        font-size: 60px;
-        margin-bottom: 30px;
-    }
-     .intro-arrow{
-        border-radius: 50%;
-        margin: auto;
-        height: 50px;
-        width: 50px;
-        border: 1px solid #000;
-        a{
-            color: #000!important;
-        }
-        .glyphicon-chevron-down{
-            margin-top: 14px;
-            animation:bounce 2s linear infinite;
-            font-size: 20px;
-        }
-    }
-}
-
-.dwnld-btns {
-    text-align: center;
-    .uk-button {
-        min-height: 40px;
-        padding: 15px 40px;
-        line-height: 38px;
-        font-size: 26px;
-        border-radius: 5px;
-        margin-right: 20px;
-        margin-bottom: 15px;
-    }
-}
-
+/* COMMON STYLES */
 hr.gradient {
     border: 0;
     height: 1px;
@@ -203,7 +151,6 @@ hr.gradient {
     margin:20px;
     margin-top: 80px;
     margin-bottom: 40px;
-    /*border-bottom: 1px solid #ffffff;*/
     p {
         font-size: 14px;
     }
@@ -213,27 +160,23 @@ hr {
     margin:40px 0px;
     border-color: #aaaaaa;
 }
-/* WORK */
+/* COMMON STYLES END */
 
+/* WORK BLOCK STYLES */
 .each-work-tile {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    /*position: absolute;*/
-    /*z-index: 400;*/
     padding:15px;
     padding-top: 20px;
-    /*min-height: 200px;*/
     color: #ddd;
     background: #333;
     margin-bottom: 40px !important;
     .cname {
         font-size: 24px;
-
         font-family: 'Droid Serif', serif;
         margin-bottom: 12px;
     }
     .crole {
-        /*font-style: italic;*/
         font-size: 13px;
         margin-bottom: 8px;
     }
@@ -255,37 +198,25 @@ hr {
         margin-bottom: 40px;
     }
 }
-
-/* WORK ENDS */
-.social-btns {
-    a {
-        font-size: 30px;
-        color:#ccc;
-        border:1px solid #ddd;
-        min-width: 90px;
-        display: inline-block;
-        padding:24px 18px;
-        margin:10px;
-    }
-    a:hover {
-        color: #00A8E5;
-    }
+.other-pro-title{
+    margin-top: 30px;
 }
+/* WORK BLOCK STYLES ENDS */
 
+
+/* WORK MODAL STYLES */
 .proj-name {
     font-size: 18px;
     font-family: 'Droid Serif', serif;
     margin:10px 0px;
     font-weight: bold;
     color: #777777;
-
 }
 .proj-desc {
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
     color: #555;
-
 }
 .img-wrap {
     padding:4px;
@@ -310,45 +241,43 @@ hr {
         margin-bottom: 10px;
     }
 }
-/* ABOUT BLOCK */
+
+.build-text{
+    margin-bottom: 15px;
+    font-size: 16px;
+    a{
+        color: #ccc;
+        text-decoration: none;
+    }
+}
+.project-det {
+    padding:40px 20px;
+    .uk-grid {
+        margin-left: 0px;
+        margin-bottom: 30px;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 30px;
+    }
+}
+
+.image-thumbs{
+    img{
+        width: 110px;
+        height: 90px;
+        float: left;
+        border: 2px solid #ccc;
+        margin-right: 3px;
+    }
+}
+/* WORK MODAL STYLES END */
+
+/* ABOUT BLOCK STYLES */
 .about-blk{
     background: #e5e3d7;
     padding:60px 0px;
     .blk-title {
         color: #333;
     }
-    /*h1{
-        text-align: center;
-        font-weight: 100;
-        margin-bottom: 20px;
-    }
-    .description{
-        font-size: 18px;
-        margin-top: 30px;
-        font-weight: 200;
-    }*/
-}
-.footer {
-    min-height: 60px;
-    padding: 20px;
-    background: #3B3A35;
-    color: #bbb;
-    .footer-links{
-        padding: 15px 0px;
-        a{
-            font-size: 20px;
-            margin: 10px;
-            color:#ddd;
-            font-weight: 400;
-            text-decoration: none;
-        }
-        .uk-icon-star{
-            font-size: 11px;
-        }
-    }
-        .uk-icon-heart{
-            margin-left: 2px;
-        }
 }
 .about-desc {
     font-size: 18px;
@@ -379,49 +308,36 @@ hr {
         margin: 0px 10px;
     }
 }
+/* ABOUT BLOCK STYLES END */
 
 
-/*.skill-blk{
-    margin-top: 40px;
-    .skills{
-        border-radius: 50%;
-        display: inline-block;
-        height: 140px;
-        width: 140px;
-        margin: auto;
-        margin-top: 30px;
-        .per-skill{
-            border-radius: 50%;
-            height: 140px;
-            width: 140px;
-            background: #7ABDDE;
-            font-size: 25px;
-            padding-top: 45px;
-            color: #fff;
-            font-weight: 300;
-            text-align: center;
-            position: absolute;
-            transition: 2s all;
-            transform-origin: center 50px;
+/* FOOTER STYLES */
+.footer {
+    min-height: 60px;
+    padding: 20px;
+    background: #3B3A35;
+    color: #bbb;
+    .footer-links{
+        padding: 15px 0px;
+        a{
+            font-size: 20px;
+            margin: 10px;
+            color:#ddd;
+            font-weight: 400;
+            text-decoration: none;
         }
-        &:hover .per-skill.first{
-            transform: translate(0px,135px);
-        }
-
-        &:hover .per-skill.second{
-            transform: translate(0px,-135px);
-        }
-
-         &:hover .per-skill.third{
-            transform: translate(135px,0px);
-        }
-
-        &:hover .per-skill.fourth{
-            transform: translate(-135px,0px);
+        .uk-icon-star{
+            font-size: 11px;
         }
     }
-}*/
+    .uk-icon-heart{
+        margin-left: 2px;
+    }
+}
+/* FOOTER STYLES END */
 
+
+/* CONTACT ME BLOCK STYLES */
 .contact-blk{
     padding:60px 0px;
     background: #3B3A35;
@@ -433,6 +349,23 @@ hr {
     }
 }
 
+.social-btns {
+    a {
+        font-size: 30px;
+        color:#ccc;
+        border:1px solid #ddd;
+        min-width: 90px;
+        display: inline-block;
+        padding:24px 18px;
+        margin:10px;
+    }
+    a:hover {
+        color: #00A8E5;
+    }
+}
+/* CONTACT ME BLOCK ENDS */
+
+/* DOWNLOADS BLOCK */
 .downloads-blk {
     background: #e5e3d7;
     padding:60px 0px;
@@ -444,58 +377,29 @@ hr {
         }
     }
 }
-
-.my-pictures{
-    margin-top: 50px;
-    img{
-        width: 200px;
-        height: 200px;
-        border: 3px solid #fff;
+.dwnld-btns {
+    text-align: center;
+    .uk-button {
+        min-height: 40px;
+        padding: 15px 40px;
+        line-height: 38px;
+        font-size: 26px;
+        border-radius: 5px;
+        margin-right: 20px;
+        margin-bottom: 15px;
     }
-    .img1, .img3, .img5{
-        transform: rotate(-10deg);
-    }
-}
-
-.project-det {
-    padding:40px 20px;
-    .uk-grid {
-        margin-left: 0px;
-        margin-bottom: 30px;
-        border-bottom: 1px dashed #ccc;
-        padding-bottom: 30px;
-    }
-}
-
-
-
-
-.build-text{
-    margin-bottom: 15px;
-    font-size: 16px;
 }
 .contact-text{
     margin-top: 20px;
     font-size: 20px;
     color:#fff;
 }
+/* DOWNLOAD BLOCK ENDS */
 
-.image-thumbs{
-    img{
-        width: 110px;
-        height: 90px;
-        float: left;
-        border: 2px solid #ccc;
-        margin-right: 3px;
-    }
-}
 
-.other-pro-title{
-    margin-top: 30px;
-}
-
+/* CARDS BLOCK */
 .card-blk{
-    background-color:#eaeaea;
+    background-color:#e5e3d7;
     color: #333;
     padding: 100px 0px;
     .blk-title{
@@ -503,28 +407,21 @@ hr {
     }
 }
 
-
 /* Flip Card Animation */
-
 /* entire container, keeps perspective */
 .flip-container {
     perspective: 1000;
     /*padding:10px;*/
 }
-    /* flip the pane when hovered */
+/* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
 
 }
 
-/*.flip{
-    transform: rotateY(180deg);
-    transition: 0.6s;
-}*/
-
 .flip-container, .front, .back {
     border-radius: 3px;
-    color: #fff;
+    color: #333;
     /*width: 260px;*/
     height: 360px;
     margin-bottom: 20px !important;
@@ -541,11 +438,17 @@ hr {
 .front, .back {
     backface-visibility: hidden;
 
-    background-color: #ffffff;
+    background-color: #fff;
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
-    color: #777;
+    color: #333;
+    i{
+        font-size: 38px;
+        margin-top: 10px;
+        color: #428bca;
+    }
 }
 
 /* front pane, placed above back */
@@ -554,9 +457,9 @@ hr {
 }
 
 /* back, initially hidden pane */
-.back {
+/*.back {
     transform: rotateY(180deg);
-}
+}*/
 
 .front{
     text-align: center;
@@ -568,62 +471,57 @@ hr {
     h3{
         font-weight: 200;
     }
-    .the-top {
+    /*.the-top {
         border:1px solid #999;
         border-radius: 4px;
 
-    }
+    }*/
 
 }
 .back{
     text-align: left;
     width: 100%;
-    /*font-size: 18px;*/
-    /*padding: 15px 15px;*/
     line-height: 170%;
-    /*margin-top: -380px;*/
     font-size: 16px;
     padding: 15px 15px;
     line-height: 170%;
     border:1px solid #cccccc;
+    color: #428bca !important;
     .the-top {
         padding:15px;
-        /*padding-top: 20px;*/
-        border:1px solid #999;
-        border-radius: 4px;
         text-align: center;
         div {
-            font-family: 'Droid Serif', serif;
-            color: #777;
-            span {
-                font-size: 13px;
-                color: #999;
-            }
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 180%;
+        }
+        span {
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 1px !important;
         }
     }
 }
-#my-job{
-    font-weight: 400;
-}
+
 .card-content {
     margin-top: 100px;
     .card-title {
-        font-family: 'Droid Serif', serif;
+        /*font-family: 'Droid Serif', serif;*/
         font-size: 24px;
         text-align: center;
-        color: #999;
-        img {
-            /*display: block;*/
+        /*img {
+            display: block;
             width:80px;
-        }
+        }*/
     }
 }
 .card-icons{
     font-size: 3em;
 }
+/* CARDS BLOCK ENDS */
+
 
 /* MEDIA QUERIES */
-
 @media (max-width:900px){
      .dwnld-btns .uk-button {
         min-height: 25px;
@@ -678,8 +576,66 @@ hr {
         width: 65px;
         margin-bottom: 10px;
     }
+    .the-top {
+        div {
+            font-size: 17px !important;
+            font-weight: 400 !important;
+            line-height: 150% !important;
+        }
+        span {
+            font-size: 13px !important;
+            font-weight: 200 !important;
+            line-height: 1px !important;
+        }
+    }
+}
+/* MEDIA QUERIES END */
+
+/* Wrapper */
+.animate-wrap {
+    position: relative;
+   /* width: 220px;*/ height: 330px;
+    background-color: transparent;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+    margin-top: 20px;
 }
 
-.hero-btns{
-    margin-bottom: 10px;
+/* Inputs */
+.animate-wrap input {
+    display: none;
+}
+.animate-wrap [type="radio"]:checked + .animate {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/* Image-Wrapper */
+.animate {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+/* Labels */
+label {
+    position: absolute; top: 0; left: 0; z-index: 2;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-weight: 200 !important;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.front {
+    z-index: 1;
 }
