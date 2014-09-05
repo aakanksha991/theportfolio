@@ -263,10 +263,16 @@ hr {
 .image-thumbs{
     img{
         width: 110px;
-        height: 90px;
+        /*height: 90px;*/
         float: left;
-        border: 2px solid #ccc;
+        border: 1px solid #dddddd;
+        padding:3px;
         margin-right: 3px;
+    }
+}
+.image-thumbs {
+    .uk-active img {
+        border:1px solid #00a8e6;
     }
 }
 /* WORK MODAL STYLES END */
@@ -589,7 +595,7 @@ hr {
 
 @media (max-width:550px){
     .image-thumbs img{
-        height: 60px;
+        /*height: 60px;*/
         width: 65px;
         margin-bottom: 10px;
     }
