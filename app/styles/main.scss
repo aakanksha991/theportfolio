@@ -152,7 +152,7 @@ hr.gradient {
     margin-top: 80px;
     margin-bottom: 40px;
     p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
 }
@@ -273,16 +273,18 @@ hr {
 
 /* ABOUT BLOCK STYLES */
 .about-blk{
-    background: #e5e3d7;
+    background: #cdd9df;
     padding:60px 0px;
+    color: #5D5453;
     .blk-title {
-        color: #333;
+        color: inherit;
     }
 }
 .about-desc {
     font-size: 18px;
     text-align: center;
     line-height: 30px;
+    font-weight: 400;
     strong {
         font-family: 'Droid Serif', serif;
     }
@@ -367,11 +369,12 @@ hr {
 
 /* DOWNLOADS BLOCK */
 .downloads-blk {
-    background: #e5e3d7;
+    background: #cdd9df;
     padding:60px 0px;
     padding-bottom: 100px;
+    color: #5D5453;
     .blk-title {
-        color: #333;
+        color: inherit;
     }
 }
 .dwnld-btns {
@@ -396,12 +399,12 @@ hr {
 
 /* CARDS BLOCK */
 .card-blk{
-    background-color:#e5e3d7;
-    color: #333;
+    background-color:#cdd9df;
+    /*color: #333;*/
     padding: 50px 0px;
     padding-bottom: 170px;
     .blk-title{
-        color: inherit;
+        color: #5D5453;
     }
 }
 
@@ -470,7 +473,7 @@ hr {
         font-weight: 200;
     }
     .the-top {
-        border:1px solid #cccccc;
+        border:1px solid #5D5453;
         border-radius: 4px;
 
     }
@@ -484,7 +487,7 @@ hr {
     padding: 15px 15px;
     line-height: 170%;
     border:1px solid #cccccc;
-    color: #428bca !important;
+    color: #5D5453 !important;
 
     .the-top {
         padding:15px;
@@ -515,10 +518,10 @@ hr {
             width: 120px;
             height:120px;
             padding-top: 30px;
-            border:1px solid #aaaaaa;
+            border:1px solid #5D5453;
             border-radius: 50%;
             margin-bottom: 15px;
-            color: #999999;
+            color: #5D5453;
         }
         /*img {
             display: block;
